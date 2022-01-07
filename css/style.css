@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  -------------- VARIABLES -------------- */
+
+:root{
+    --sand: #e3dfd8;
+    --matcha: #d2c9c0;
+    --linen: rgb(170, 161, 153);
+    --sage: #adb3a9;
+    --dark-love: #7a8076;
+    --light-gray: #f3f3f3;
+}
+
+/* --------------- ICONS ------------------ */
+
+ion-icon{
+    color: white;
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+/*  -------------- GENERALES -------------- */
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+.titulo_chico{
+    color: var(--matcha);
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo_chico::before{
+    content: '';
+    width: 40px;
+    height: 3px;
+    display: inline-block;
+    background-color: var(--matcha);
+    margin-right: 10px;
+    position: relative;
+    bottom: 3px;
+}
+
+.btn{
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: 2px var(--sage) solid;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: white;
+    color: var(--sage);
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+ul li{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --------------- NAV BAR ---------------- */
+
+.container{
+    width: 100%;
+}
+
+.menu{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    margin: auto;
+    position: absolute;
+    top: 0;
+}
+
+.nav_menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 15px;
+}
+.active{
+    font-weight: bold;
+}
+
+.btn_menu, .btn_check{
+    display: none;
+}
+
+/* ----------- FOOTER --------------- */
+
+footer{
+    background-color: var(--matcha);
+}
+
+.footer_options{
+    width: 90%;
+    display: flex;
+    padding: 40px 15px;
+    color: white;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.footer_options h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.footer_options ul li{
+    list-style: none;
+    font-weight: bold;    
+}
+
+.footer_options ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* ------------ DESKTOP 1 ------------- */
+
+.inicio{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/home/PORTADA.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    position: relative;
+    top: 0;
+    z-index: 0;
+    justify-content: center;
+}
+
+.inicio p{
+    font-size: 1rem;
+}
+
+.texto_inicio{
+    position: absolute;
+    bottom: 50px;
+    z-index: 500;
+    text-align: center;
+    color: white;
+    max-width: 90%;
+}
+
+.texto_inicio h1{
+    font-size: 3rem;
+}
+
+.btn_inicio{
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: var(--sand);
+    color: white;
+}
+
+.btn_inicio:hover{
+    background-color: var(--matcha);
+    cursor: pointer;
+}
+
+/* ------------ CHOICES ------------- */
+
+.choices{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: .2fr 1fr 1fr;
+    grid-template-areas:
+    'tittle tittle tittle tittle tittle'
+    'photo photo photo img1 img1'
+    'img2 img2 wedd wedd wedd';
+    gap: 10px;
+}
+
+.description{
+    font-family: serif;
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+
+.session h2{
+    margin-top: 50px;
+    margin-left: 35px;
+    font-size: 2rem;
+    font-weight: lighter;
+    color: var(--matcha);
+    grid-area: tittle;
+}
+
+.choices article .div{
+    display: flex;
+    flex: nowrap row;
+    align-items: center;
+}
+
+.photo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    grid-area: photo;
+    width: 90%;
+    padding: 20px 0;
+}
+
+.photoshoot{
+    background-image: url(../img/home/PHOTOSHOOT.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    grid-area: img1;
+}
+
+.wedd{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    align-items: end;
+    margin:auto;
+    grid-area: wedd;
+    padding: 20px 0;
+}
+
+.wedding{
+    background-image: url(../img/home/WEDDING.jpg);
+    background-size: cover;
+    background-position: top;
+    grid-area: img2;
+}
+
+
+/* ----------- REVIEWS --------------- */
+
+.reviews{
+    height: 45vh;
+    margin-top: 35px;
+}
+
+.rev_cont{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+.rev_cont h3{
+    font-size: 3rem;
+    font-weight: lighter;
+    padding-top: 20px;
+
+}
+
+.slider_container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}   
+
+.slider_body{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s;
+}
+
+.slider_body--show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.slider_text{
+    padding: 10px 20px;
+    height: 200px;
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    margin: auto ;
+    border-radius: 3px;
+}
+
+.slider_text h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.slider_arrow{
+    cursor: pointer;
+    width: 90%;
+}
+
+.slider_arrow:nth-of-type(2){
+    justify-self: end;
+}
+
+/* ------------------- DESKTOP 3 ---------------------- */
+/* ------------------- PORTFOLIO ---------------------- */
+
+.portfolio_banner{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/portfolio/PORTADA\ Estelar.JPG);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    position: relative;
+    top: 0;
+    z-index: 0;
+    justify-content: center;
+}
+
+.portfolio_banner p{
+    font-size: 1rem;
+}
+
+.texto_portfolio{
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    color: white;
+}
+
+.texto_portfolio h1{
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    line-height: 40px;
+    border-bottom: 3px solid white;
+    width: fit-content;
+    margin-bottom: 25px;
+}
+
+.texto_portfolio p{
+    font-family: serif;
+    font-size: 3rem;
+    width: 60%;
+}
+
+/* ----------- MEDIA QUERYS --------- */
+@media only screen and (max-width: 426px){
+
+    /*------------------- MENÚ ------------------ */
+    .btn_menu{
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        right: 30px;
+        z-index: 1500;
+    }
+
+    .btn_menu ion-icon{
+        color: var(--dark-love);
+        border: solid 2px var(--linen);
+        border-radius: 3px;
+        background-color: rgba(170, 161, 153, .3);
+    }
+
+    .menu .top{
+        z-index: 1500;
+    }
+
+    .nav_menu{
+        position: fixed;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: var(--matcha);
+        z-index: 800;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+        transition: clip-path .7s;
+    }
+
+    .btn_check:checked + .nav_menu{
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    }
+    /* ---------------- SECCIÓN CHOICES --------- */
+    .choices{
+        height: 100vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: .1fr 1fr 1fr;
+        grid-template-areas:
+        'tittle tittle tittle tittle'
+        'photo photo img1 img1'
+        'img2 img2 wedd wedd';
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .description{
+        font-family: serif;
+        margin-bottom: 10px;
+        font-size: 2rem;
+    }
+    
+    .wedd{
+        width: 90%;
+        padding-right: 10px;
+    }
+
+    .session h2{
+        margin: auto;
+    }
+
+    .titulo_chico::before{
+        width: 15px;
+    }
+
+    .reviews{
+        height: 55vh;
+    }
+/* --------- SLIDERS ------------- */
+    .slider_container{
+        width: 100%;
+        margin-top: 20px;
+        grid-template-columns: 25px 1fr 25px;
+    }
+
+    .slider_text{
+        height: fit-content;
+        margin: auto;
+    }
+/* --------------- FOOTER -------------- */
+    .footer_options{
+        display: grid;
+        grid-template-areas: "lista location"
+                             "contact media";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 20px 5px;
+    }
+
+    .footer_options div{
+        padding: 5px;
+    }
+}

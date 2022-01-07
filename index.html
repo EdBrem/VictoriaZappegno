@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title> VZ | HOME</title>
+</head>
+<body>
+    <header class="container">
+        <section class="inicio">
+        <div class="menu">
+            <img src="img/logo_blanco.png" alt="logo" class="top" width="100px">
+            
+            <label for="menu" class="btn_menu top">
+                <ion-icon name="menu-outline"></ion-icon>
+            </label>
+            <input type="checkbox" id="menu" class="btn_check">
+
+            <div class="nav_menu">
+                <a href="" class="active">HOME</a>
+                <a href="html/about.html">ABOUT ME</a>
+                <a href="html/portfolio.html">PORTFOLIO</a>
+                <a href="html/prices.html">PRICES</a>
+                <a href="html/contact.html">CONTACT</a>
+                <a href="html/faq.html">FAQ</a>
+            </div>
+        </div>    
+
+
+<!-- INICIO -->
+
+        <div class="texto_inicio">
+            <p>VICTORIA ZAPPEGNO</p>
+            <h1>Let us capture the magic of your moment</h1>
+            <a href=""><button class="btn_inicio"> Book Now </button></a>
+        </div>
+    </section>
+
+<!-- INICIO DE SECCIONES -->
+    <section class="session">
+        <div class="choices">
+            <h2>Session Choices</h2>
+            <article class="photo">
+                <div>
+                <h3 class="titulo_chico"> P H O T O S H O O T</h3>
+                </div>
+                <p class="description">Capture your most beautiful memories in photos</p>
+                <p>I am ready to portray your beauty, are you?</p>
+                <a href="">
+                    <button class="btn"> See More </button>
+                </a>
+            </article>
+            <div class="photoshoot"></div>
+            
+            <article class="wedd">
+                <div>
+                    <h3 class="titulo_chico"> W E D D I N G </h3>
+                    <p class="description">I am ready to portray the beauty of your encounter, are you?</p>
+                    <p>It's my pleasure to do so.</p>
+                    <a href="">
+                        <button class="btn"> See More </button>
+                    </a>
+                </div>
+            </article>
+            <div class="wedding"></div>
+        </div>
+    </section>
+<!-- REVIEWS -->
+    <section class="reviews">
+        <div class="rev_cont">
+            <h2 class="titulo_chico"> R E V I E W S </h2>
+            <h3>¿Why me?</h3>
+
+            <div class="slider_container">
+                <img src="./assets/left_arrow.svg" class="slider_arrow" alt="before" id="before">
+
+                <section class="slider_body slider_body--show" data-id="1">
+                    <div class="slider_text">
+                        <h2 class="review_name">Ruth Ellefson</h2>
+                        <p class="slider_review">“We are very satisfied, my husband and I, with Vicky’s work. We have known her for several years. Yessss! We highly recommend her!”</p>
+                    </div>
+                </section>
+
+                <section class="slider_body" data-id="2">
+                    <div class="slider_text">
+                        <h2 class="review_name">Romina Fernanda Depetris</h2>
+                        <p class="slider_review">Hermosa experiencia haber realizado una sesión junto a Vicky. Es realmente increíble cómo capturó el momento y con la naturalidad que lo hizo. Las fotografías invadieron nuestro hogar. Muchísimas gracias.</p>
+                    </div>
+                </section>
+
+                <section class="slider_body" data-id="3">
+                    <div class="slider_text">
+                        <h2 class="review_name">Jodie O’Grant Shafer</h2>
+                        <p class="slider_review">We had the pleasure of having Vicky do our first photo shoot together. The experience was top notch. Vicky was amazing. She made us feel so relaxed and comfortable. The pictures are excellent! <br> This is an experience that we will never forget and our pictures are a daily reminder. I highly recommend Vicky Zappegno</p>
+                    </div>
+                </section>
+
+                <section class="slider_body" data-id="4">
+                    <div class="slider_text">
+                        <div class="slider_tittle">
+                            <h2 class="review_name">Carla Dogliani</h2>
+                        </div>
+                        <p class="slider_review">Recomiendo muchísimo a Vicky. No solo saca fotos y las mejores, sino que también logra captar emociones, olores, sensaciones, momentos con textura que los plasma en fotografías. Te plantea un juego en donde juegas y ella crea maravillas para toda la vida</p>
+                    </div>
+                </section>
+
+                <img src="./assets/right_arrow.svg" class="slider_arrow" alt="after" id="after">
+            </div>
+        </div>
+    </section>
+<!-- FIN DE SECCIONES -->
+<!-- INICIO DEL FOOTER -->
+    <footer class="container">
+        <div class="footer_options">
+            <div class="footer_menu">
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="/html/about.html">About</a></li>
+                    <li><a href="/html/portfolio.html">Portfolio</a></li>
+                    <li><a href="/html/prices.html">Prices</a></li>
+                    <li><a href="/html/contact.html">Contact</a></li>
+                    <li><a href="/html/faq.html">FAQ</a></li>
+                </ul>
+            </div> 
+            <div class="location">
+                <h3>My location</h3>
+                <p>Playa del Carmen, México</p>
+            </div>
+            <div class="footer_contact">
+                <h3>Contact</h3>
+                <p>Email: vickyzappegno@gmail.com</p>
+                <p>Phone: +529841115751</p>
+            </div>
+            <div class="social_media">
+                <h3>Follow me</h3>
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+
+<!-- Scripts -->
+
+<script src="js/slider.js"></script>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+</body>
+</html>
