@@ -244,12 +244,12 @@ footer{
     .about_bkg::after{
         content: '';
         background-color: var(--matcha);
-        height: 79%;
+        height: 750px;
         width: 95%;
         position: absolute;
         z-index: -1000;
         right: 0;
-        top: 180px;
+        top: 130px;
     }
 
 }
