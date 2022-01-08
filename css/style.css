@@ -414,7 +414,7 @@ footer{
     }
     /* ---------------- SECCIÓN CHOICES --------- */
     .choices{
-        height: 882px;
+        height: 100%;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: .1fr 1fr 1fr;
         grid-template-areas:
@@ -436,6 +436,11 @@ footer{
         padding-right: 10px;
     }
 
+    .session{
+        margin-bottom: 20px;
+        height: 882px;
+    }
+
     .session h2{
         margin: auto;
     }
@@ -445,7 +450,7 @@ footer{
     }
 
     .reviews{
-        height: 55vh;
+        height: 490px;
     }
 /* --------- SLIDERS ------------- */
     .slider_container{
