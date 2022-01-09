@@ -480,3 +480,16 @@ footer{
         padding: 5px;
     }
 }
+
+@media only screen and (min-width: 426px){
+
+    .session{
+        margin-bottom: 20px;
+        height: 882px;
+    }
+
+    .reviews{
+        height: 490px;
+    }
+    
+}
