@@ -37,7 +37,10 @@ previous.addEventListener('click', ()=> {
             img.style.backgroundSize = `cover`;
             conteo--;
         } else {
-            img.src = banner[banner.length - 1];
+            img.style.background = `url(${banner[banner.length - 1]})`;
+            img.style.backgroundPosition = `center`;
+            img.style.backgroundRepeat = `no-repeat`;
+            img.style.backgroundSize = `cover`;
             conteo = banner.length - 1;
         }
     })
@@ -49,8 +52,11 @@ nextImg.addEventListener('click', ()=>{
         img.style.backgroundRepeat = `no-repeat`;
         img.style.backgroundSize = `cover`;
         conteo ++;
-    } else if (conteo === 7){
-        img.src = banner[0]
+    } else {
+        img.style.background = `url(${banner[0]})`
+        img.style.backgroundPosition = `center`;
+        img.style.backgroundRepeat = `no-repeat`;
+        img.style.backgroundSize = `cover`;
         conteo = 0
     }
 })
