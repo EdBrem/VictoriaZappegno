@@ -555,12 +555,24 @@ footer{
     }
 
     .reviews{
-        height: 490px ;
+        height: 400px ;
     }
     .texto_inicio button{
         display: none;
     }
     .texto_inicio{
         top: 60%;
+    }
+
+    .texto_portfolio{
+        top: 40%;
+    }
+
+    .texto_portfolio p{
+        font-size: 2rem;
+    }
+
+    .texto_portfolio h1{
+        margin-bottom: 0;
     }
 }
