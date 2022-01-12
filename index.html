@@ -29,14 +29,25 @@
         </div>    
     </header>
 <!-- BANNER SLIDER INICIO -->
-    <section id="banner_inicio">
-        <div>
-            <ion-icon name="chevron-back-circle-outline" id="previous"></ion-icon>
-        </div>
+    <section id="banner_inicio" data-carousel>
+            <button>
+                <ion-icon name="chevron-back-circle-outline" data-carousel-button id="previous"></ion-icon>
+            </button>
+            <button>
+                <ion-icon name="chevron-forward-circle-outline" data-carousel-button id="next_img"></ion-icon>  
+            </button>
+        <ul data-slides>
+            <li class="slide" data-active><img src="img/home/CARRUSEL1.JPG" alt="foto_muestra"></li>
+            <li class="slide"><img src="img/home/CARRUSEL2.JPG" alt="foto_muestra"></li>
+            <li class="slide"><img src="img/home/CARRUSEL3.JPG" alt="foto_muestra"></li>
+            <li class="slide"><img src="img/home/CARRUSEL4.JPG" alt="foto_muestra"></li>
+            <li class="slide"><img src="img/home/CARRUSEL5.JPG" alt="foto_muestra"></li>
+            <li class="slide"><img src="img/home/CARRUSEL6.JPG" alt="foto_muestra"></li>
+            <li class="slide"><img src="img/home/CARRUSEL7.JPG" alt="foto_muestra"></li>
+            <li class="slide"><img src="img/home/CARRUSEL8.JPG" alt="foto_muestra"></li>
+        </ul>
 
-        <div>
-            <ion-icon name="chevron-forward-circle-outline" id="next_img"></ion-icon>  
-        </div>
+
 
         <!-- <img src="img/home/CARRUSEL1.JPG" alt="fotografía_muestra" id="imagen_banner"> -->
 

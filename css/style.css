@@ -136,45 +136,72 @@ footer{
 
 /* ------------ DESKTOP 1 ------------- */
 
-/* .inicio{
-    width: 100%;
-    height: 100vh;
-    background: url(../img/home/CARRUSEL1.JPG);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    position: relative;
-    top: 0;
-    z-index: 0;
-    justify-content: center;
-
-} */
 
 #banner_inicio{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     top: 0;
-    background: url(../img/home/CARRUSEL1.JPG);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    position: relative;
 }
 
-/* .banner_inicio > img{
-    width: 100vw;
-} */
+#banner_inicio > ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#banner_inicio ion-icon{
+    background-color: rgba(0,0,0,.2);
+    padding: 5px;
+    color: rgba(255,255,255,.7);
+    border-radius: 50%;
+}
+
+#banner_inicio ion-icon:hover,
+#banner_inicio ion-icon:focus{
+    color: rgba(255,255,255,.9);
+    background-color: rgba(0,0,0,.4);
+}
+
+#banner_inicio ion-icon:focus{
+    outline: 1px solid black;
+}
+
+.slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+.slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide[data-active]{
+    opacity: 1;
+    transition-delay: 0ms;
+}
 
 #previous{
-    left: 5%;
-    top: calc(50% - 10px);
+    left: 1em;
+    top: 50%;
+    transform: translateY(-50%) ;
     position: absolute;
+    z-index: 2;
 }
 
 #next_img{
-    right: 5%;
-    top: calc(50% - 10px);
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%) ;
     position: absolute;
+    z-index: 2;
 }
 
 
@@ -398,6 +425,34 @@ footer{
     font-family: serif;
     font-size: 3rem;
     width: 60%;
+}
+
+/* ---------------- PORTFOLIO SLIDER ----------------- */
+.portafolio_slider{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    align-items: center;
+    gap: 1em;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#prev_two , #next_two{
+    width: 100px;
+}
+
+.port_body{
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s;
+    width: 500px;
+}
+
+.port_body--show{
+    opacity: 1;
 }
 
 /*  */
