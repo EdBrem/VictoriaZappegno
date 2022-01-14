@@ -76,7 +76,7 @@ header{
 }
 
 .menu{
-  width: 90%;
+  width: 100%;
   height: 100px;
   display: flex;
   flex-direction: row;
@@ -392,7 +392,7 @@ footer{
     background-position: center;
     display: flex;
     position: relative;
-    top: -100px;
+    top: 0;
     z-index: -100;
     justify-content: center;
 }
@@ -487,6 +487,114 @@ footer{
 }
 
 
+/*------------- PRICES -----------------  */
+.prices_banner{
+    top: 100px;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.prices_banner img{
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: -50px;
+    z-index: -100;
+}
+
+.prices_banner img::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,1);
+    z-index: 100;
+}
+
+.cont_prices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    width: 90%;
+    height: 100%;
+    margin-left: 2em;
+}
+
+.cont_prices h1{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.cont_prices p{
+    color: white;
+}
+
+.cont_prices p::before{
+    width: 90px;
+    height: 2px;
+    background-color: white;
+}
+
+.container_cards{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.prices_card{
+    width: 200px;
+    margin: 15px;
+}
+
+.pack{
+    background:var(--sand);
+    text-align: center;
+    padding: 5px;
+}
+
+
+.pack h2{
+    font-size: 1rem;
+    border-top-left-radius:5px;
+}
+
+.pack_content {
+    height: 180px;
+    background: var(--light-gray);
+}
+
+.uno{
+    height: 100px;
+}
+
+.pack_content ul li{
+    list-style: none;
+    font-size: 12px;
+}
+
+.pack_content ul{
+    padding: 15px;
+    text-align: center;
+}
+
+.price{
+    text-align: center;
+    padding: 10px;
+    background: var(--light-gray);
+    border-top: 2px solid var(--sand);
+}
+
+.price p{
+    color: #000;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
 /* ------------ CONTACTO ---------------- */
 
 .contacto{
@@ -559,6 +667,66 @@ legend{
 /*  */
 /* ----------- MEDIA QUERYS --------- */
 /*  */
+/*  */
+
+/*  */
+/* ------------------ AJUSTES GRALES TABLETAS EN ADELANTE  ---------------- */
+/*  */
+@media only screen and (min-width: 426px){
+
+    .session{
+        margin-bottom: 20px;
+        height: 882px;
+    }
+
+    .reviews{
+        height: 490px;
+    }
+    
+}
+
+@media only screen and (max-width:1024px){
+    .container_cards{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .prices_banner{
+        height: 1000px;
+        padding: 50px 0;
+    }
+
+}
+
+/*  */
+/* ------------------MEDIA TABLETAS ---------------- */
+/*  */
+
+@media only screen and (min-width:426px) and (max-width:769px){
+    .container_cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 10px 0;
+        gap: 10px;
+    }
+
+    .prices_banner{
+        padding: 0;
+        height: 1000px;
+    }
+
+    .prices_card{
+        margin: 0;
+    }
+
+    .cont_prices{
+        margin-left: 20px;
+    }
+
+}
+
+/*  */
+/* ------------------MEDIA DISPOSITIVOS MOVILES ---------------- */
 /*  */
 
 @media only screen and (max-width: 426px){
@@ -731,24 +899,37 @@ legend{
     .form_btn{
         width: 310px;
     }
-}
 
-@media only screen and (min-width: 426px){
-
-    .session{
-        margin-bottom: 20px;
-        height: 882px;
+    /* ---------- PRICES ------------ */
+    .container_cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 10px;
+        margin: 10px 0;
+    }
+    .prices_banner{
+        width: 100%;
+        height: 2050px;
+        padding: 0;
     }
 
-    .reviews{
-        height: 490px;
+    .prices_card{
+        margin: 0 auto;
+        width: 300px;
     }
-    
+
+    .cont_prices{
+        margin-left: 1em;
+    }
+
 }
 
-@media only screen and (max-height: 426px){
+/*  ---------------------- TELEFONO EN HORIZONTAL ------------- */
+
+@media only screen and (min-height: 320px) and (max-height:425px){
     .session{
-        height: 200vh;
+        height: 250vh;
     }
 
     .reviews{
@@ -758,7 +939,7 @@ legend{
         display: none;
     }
     .texto_inicio{
-        top: 60%;
+        top: 50%;
     }
 
     .texto_portfolio{
@@ -771,5 +952,14 @@ legend{
 
     .texto_portfolio h1{
         margin-bottom: 0;
+    }
+
+    .contacto{
+        height: 640px;
+    }
+
+    .container_cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
     }
 }
