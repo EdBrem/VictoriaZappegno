@@ -39,11 +39,11 @@
 
             <form method="post">
                 <legend>Name*</legend>
-                <input type="text" class="form_input" name="name">
+                <input type="text" class="form_input" name="name" required>
                 <legend>Email*</legend>
-                <input type="email" class="form_input" name="email">
+                <input type="email" class="form_input" name="email" required>
                 <legend>Message*</legend>
-                <textarea class="form_input" name="msg"></textarea><br>
+                <textarea class="form_input" name="msg" required></textarea><br>
                 <input type="submit" class="form_btn" value="Send Message"> 
             </form>
 
