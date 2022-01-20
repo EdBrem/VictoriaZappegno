@@ -44,7 +44,7 @@
                 <input type="email" class="form_input" name="email">
                 <legend>Message*</legend>
                 <textarea class="form_input" name="msg"></textarea><br>
-                <button class="form_btn"> Send Message </button>
+                <input type="submit" class="form_btn" value="Send Message"> 
             </form>
 
         </div>
