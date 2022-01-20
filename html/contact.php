@@ -37,13 +37,15 @@
                 <p>I LOOK FORWARD TO HEARING FROM YOU!</p>
             </div>
 
-            <legend>Name*</legend>
-            <input type="text" class="form_input">
-            <legend>Email*</legend>
-            <input type="email" class="form_input">
-            <legend>Message*</legend>
-            <textarea class="form_input" cols="40" rows="10"></textarea><br>
-            <button class="form_btn"> Send Message </button>
+            <form method="post">
+                <legend>Name*</legend>
+                <input type="text" class="form_input" name="name">
+                <legend>Email*</legend>
+                <input type="email" class="form_input" name="email">
+                <legend>Message*</legend>
+                <textarea class="form_input" name="msg"></textarea><br>
+                <button class="form_btn"> Send Message </button>
+            </form>
 
         </div>
     </section>
@@ -78,5 +80,8 @@
         </div>
     </footer>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <?php
+    include("mail.php");
+    ?>
 </body>
 </html>
