@@ -1,4 +1,65 @@
+/* -------------- FONTS --------------  */
+
+@font-face {
+    font-family: 'Chronicle';
+    src: url('../fonts/chronicle-display/ChronicleDisplayBlack.otf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Chronicle';
+    src: url('../fonts/chronicle-display/ChronicleDisplaySemibold.otf');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Chronicle';
+    src: url('../fonts/chronicle-display/ChronicleDisplayRoman.otf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Chronicle';
+    src: url('../fonts/chronicle-display/ChronicleDisplayLightItalic.otf');
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroy/Gilroy-ExtraBold.otf');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroy/Gilroy-Light.otf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Kiona';
+    src: url('../fonts/kiona/Kiona-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Kiona';
+    src: url('../fonts/kiona/Kiona-Itallic.ttf');
+    font-style: italic;
+    font-weight: normal;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+
 
 *{
     margin: 0;
@@ -122,6 +183,57 @@ p{
 .vicky{
     width: 400px;
 }
+
+/* ----------- FAQ PAGE --------------- */
+
+.container#faq {
+    max-width: 70%;
+    margin: 100px auto;
+}
+
+.container#faq h1 {
+    color: var(--linen);
+    font-family: 'Chronicle', sans-serif;
+    font-weight: 600;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.container#faq>p {
+    font-family: 'Poppins';
+    color: var(--linen);
+}
+
+.container#faq>p span{
+    cursor: pointer;
+}
+
+.container#faq .divisor {
+    border: 1px solid var(--linen);
+    display: inline-block;
+    width: 100px;
+    margin-top: 100px;
+}
+
+
+.container#faq .item h2{
+    color: black;
+    font-family: 'Chronicle', sans-serif;
+    font-weight: normal;
+    font-size: 2.5em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.container#faq .item p {
+    color: black;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+
+
 
 /* ----------- FOOTER --------------- */
 
