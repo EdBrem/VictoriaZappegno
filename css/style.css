@@ -314,6 +314,7 @@ footer{
 .reviews{
     height: 45vh;
     margin-top: 35px;
+    padding: 15px 0;
 }
 
 .rev_cont{
@@ -428,8 +429,8 @@ footer{
 /* ---------------- PORTFOLIO SLIDER ----------------- */
 
 #carousel_portfolio{
-    width: 85%;
-    height: 350px;
+    width: 95%;
+    height: 450px;
     top: 0;
     position: relative;
     margin: auto;
@@ -676,7 +677,6 @@ legend{
 
     .session{
         margin-bottom: 20px;
-        height: 882px;
     }
 
     .reviews{
@@ -794,7 +794,8 @@ legend{
         'photo photo img1 img1'
         'img2 img2 wedd wedd';
         gap: 10px;
-        margin-top: 10px;
+        margin-top: 15px;
+        
     }
 
     .description{
@@ -822,7 +823,7 @@ legend{
     }
 
     .reviews{
-        height: 490px;
+        height: 380px;
     }
 /* --------- SLIDERS ------------- */
     .slider_container{
@@ -910,7 +911,7 @@ legend{
     }
     .prices_banner{
         width: 100%;
-        height: 2050px;
+        height: 2100px;
         padding: 0;
     }
 
