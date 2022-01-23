@@ -1,3 +1,62 @@
+/* -------------- FONTS --------------  */
+
+@font-face {
+    font-family: 'Chronicle';
+    src: url('../fonts/chronicle-display/ChronicleDisplayBlack.otf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Chronicle';
+    src: url('../fonts/chronicle-display/ChronicleDisplaySemibold.otf');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Chronicle';
+    src: url('../fonts/chronicle-display/ChronicleDisplayRoman.otf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Chronicle';
+    src: url('../fonts/chronicle-display/ChronicleDisplayLightItalic.otf');
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroy/Gilroy-ExtraBold.otf');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroy/Gilroy-Light.otf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Kiona';
+    src: url('../fonts/kiona/Kiona-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Kiona';
+    src: url('../fonts/kiona/Kiona-Itallic.ttf');
+    font-style: italic;
+    font-weight: normal;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 
 *{
@@ -16,6 +75,7 @@
     --dark-love: #7a8076;
     --light-gray: #f3f3f3;
     --tipo-sans-serif: 'Poppins', sans-serif;
+    --font-chronicle: 'Chronicle', sans-serif;
 }
 
 /* --------------- ICONS ------------------ */
@@ -421,73 +481,89 @@ footer{
 }
 
 .texto_portfolio p{
-    font-family: serif;
+    font-family:  var(--tipo-ch);
     font-size: 3rem;
     width: 60%;
 }
 
-/* ---------------- PORTFOLIO SLIDER ----------------- */
-
 #carousel_portfolio{
-    width: 95%;
-    height: 450px;
+    width: auto;
     top: 0;
     position: relative;
     margin: auto;
     overflow: hidden;
 }
 
-#carousel_portfolio > ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+#carousel_portfolio h3{
+    width: 85%;
+    margin: auto;
+    margin-top: 100px;
+
+    font-weight: 600;
+    font-family: var(--font-chronicle);
+    font-size: 3em;
 }
 
-#carousel_portfolio > ul li{
-    display: inline-block;
-    margin: 0 20px;
-}
-
-#carousel_portfolio ion-icon{
-    background-color: rgba(0,0,0,.2);
-    padding: 5px;
-    color: rgba(255,255,255,.7);
-    border-radius: 50%;
-}
-
-#carousel_portfolio ion-icon:hover,
-#carousel_portfolio ion-icon:focus{
-    color: rgba(255,255,255,.9);
-    background-color: rgba(0,0,0,.4);
-}
-
-#carousel_portfolio ion-icon:focus{
-    outline: 1px solid black;
-}
-
-.covers > img {
-    display: block;
-    width: 400px;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.covers{
-    opacity: 0;
+/* Sliders carousel */
+#carousel_portfolio .carousel .carousel_container {
+    width: 90%;
+    margin:auto;
     position: relative;
+}
+
+.arrow-left,
+.arrow-right{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+}
+
+.arrow-left {
+    left: -50px;
+}
+
+.arrow-right{
+    right: -50px;
+}
+
+.glider {
+    overflow: hidden;
+}
+
+.glider_element {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.glider_element {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.glider_element p{
+    position: absolute;
     top: 50%;
-    left: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: normal;
+    font-family: var(--font-chronicle);
+    font-size: 3em;
+    width: 500px;
 }
-
-.covers[data-active]{
-    opacity: 1;
-}
-
-
+  
+  
 /*------------- PRICES -----------------  */
 .prices_banner{
     top: 100px;
