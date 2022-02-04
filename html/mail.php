@@ -15,4 +15,6 @@ setcookie("gcorreo", $nombre, time() + 60*60*24*30);
 
 $msg = "Nombre: ".$nombre. "\n". "Correo: ".$correo. "\n". "Mensaje: ".$mensaje;
 mail($target, "Nuevo mensaje en la página.", $msg);
-header("location: contact.php");
+header("location: contact.html");
+
+?>
