@@ -736,7 +736,24 @@ legend{
     margin-top: 10px;
 }
 
-/* PORTFOLIO PABLO */
+/* BANNERS PORTFOLIO */
+
+/* ESTELAR */
+
+.portfolio_estelar .portfolio_banner {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/Cont_portfolios/ESTELAR/estelar1.JPG);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    position: relative;
+    top: 0;
+    z-index: -100;
+    justify-content: center;
+}
+/* PABLO */
 .portfolio_pablo .portfolio_banner {
     width: 100%;
     height: 100vh;
@@ -751,7 +768,84 @@ legend{
     justify-content: center;
 }
 
-.portfolio_pablo .portfolio_banner .texto_portfolio h1{
+/* GIME */
+.portfolio_gime .portfolio_banner {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/Cont_portfolios/GIME/gime1.JPG);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    position: relative;
+    top: 0;
+    z-index: -100;
+    justify-content: center;
+}
+
+/*  OSO */
+.portfolio_oso .portfolio_banner {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/Cont_portfolios/OSO_ESTHER/os_es1.JPG);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    position: relative;
+    top: 0;
+    z-index: -100;
+    justify-content: center;
+}
+/* wally */
+.portfolio_wally .portfolio_banner {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/Cont_portfolios/Wally/wally1.JPG);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    position: relative;
+    top: 0;
+    z-index: -100;
+    justify-content: center;
+}
+
+/* wicho */
+.portfolio_wicho .portfolio_banner {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/Cont_portfolios/Wicho_Ray_Mo/luis1.JPG);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    position: relative;
+    top: 0;
+    z-index: -100;
+    justify-content: center;
+}
+
+/* PABLO */
+.portfolio_wedding .portfolio_banner {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/Cont_portfolios/WEDDING/wedding1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    position: relative;
+    top: 0;
+    z-index: -100;
+    justify-content: center;
+}
+
+
+
+/*  GENERALES PORTAFOLIOS */
+.portfolio_banner .texto_portfolio h1{
     color: white;
     font-size: 16px;
     font-weight: 600;
@@ -763,7 +857,7 @@ legend{
     margin-bottom: 0;
 }
 
-.portfolio_pablo .portfolio_banner .texto_portfolio p{
+.portfolio_banner .texto_portfolio p{
     font-family: var(--font-chronicle);
     font-size: 4rem;
 }
@@ -787,6 +881,7 @@ legend{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     transition: all 0.8s;
     cursor: pointer;
 }
