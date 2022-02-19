@@ -677,10 +677,11 @@ footer{
 /*------------- PRICES -----------------  */
 .prices_banner{
     top: 100px;
-    height: 900px;
+    height: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-top: 25%;
 }
 
 .prices_banner img{
@@ -722,6 +723,10 @@ footer{
     color: white;
 }
 
+.cont_prices p.comentario{
+    margin-bottom: 30px;
+}
+
 .cont_prices p::before{
     width: 90px;
     height: 2px;
@@ -737,7 +742,7 @@ footer{
 
 .prices_card{
     font-family: var(--font-chronicle);
-    width: 200px;
+    width: 90%;
     margin: 15px;
     border-radius: 5px;
     overflow: hidden;
@@ -853,7 +858,7 @@ legend{
 .form_contacto input{
     width: 515px;
     margin: 0 0 15px;
-    padding: 15px 0;
+    padding: 15px 5px;
     border: none;
     border-radius: 3px;
 
@@ -865,6 +870,7 @@ legend{
     resize: none;
     width: 515px;
     height: 150px;
+    padding: 5px 5px;
 }
 
 .form_contacto input.form_btn{
@@ -1358,7 +1364,7 @@ legend{
     }
 
     .prices_card{
-        margin: 0 auto;
+        margin: 15px auto;
         width: 300px;
     }
 

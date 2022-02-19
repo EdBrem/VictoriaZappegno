@@ -28,7 +28,7 @@ $mail->Body = "<p>Este mail es enviado desde la pagina</p><br><ul><li>Name: ".$n
 $mail->isHTML(true);
 
 if($mail->send()) {
-    echo "<script>location.href='../index.html'</script>";
+    echo "<script>location.href='../index.html?email=sent'</script>";
 }
 else {
     echo "2 Error al enviar mail: err->".$mail->ErrorInfo;
