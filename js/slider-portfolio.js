@@ -2,8 +2,8 @@
 
 window.addEventListener('load', function() {
     new Glider(document.querySelector('.glider'), {
-         slidesToShow: 2,
-         slidesToScrol: 2,
+         slidesToShow: 1,
+         slidesToScrol: 1,
          draggable: true,
          arrows: {
              prev: '.arrow-left',
@@ -15,14 +15,18 @@ window.addEventListener('load', function() {
               breakpoint: 775,
               settings: {
                 // Set to `auto` and provide item width to adjust to viewport
-                slidesToShow: 'auto',
-                slidesToScroll: 'auto',
-                itemWidth: 150,
-                duration: 0.25
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                draggable: true,
+                arrows: {
+                    prev: '.arrow-left',
+                    next: '.arrow-right'
+                }
               }
             },{
               // screens greater than >= 1024px
               breakpoint: 1024,
+              draggable: true,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
@@ -32,5 +36,4 @@ window.addEventListener('load', function() {
             }
           ]
     })
-
 })

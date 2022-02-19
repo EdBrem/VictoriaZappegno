@@ -78,6 +78,8 @@
     --sage: #adb3a9;
     --dark-love: #7a8076;
     --light-gray: #f3f3f3;
+    --tipo-sans-serif: 'Poppins', sans-serif;
+    --font-chronicle: 'Chronicle', sans-serif;
 }
 
 /* --------------- ICONS ------------------ */
@@ -137,8 +139,10 @@ p{
 /* ----------- ABOUT --------------- */
 
 .about_me{
+    font-family: var(--font-chronicle);
     display: flex;
     height: 80vh;
+    margin: 75px 0;
     flex-direction: row;
     align-items: center ;
 }
@@ -152,36 +156,60 @@ p{
     height: 90%;
     width: 90%;
     text-align: justify;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .about_bkg::after{
     content: '';
-    background-color: var(--matcha);
-    height: 70%;
+    height: auto;
     width: 90%;
     position: absolute;
     z-index: -1000;
     right: 0;
 }
 
+.about_bkg span {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 14px;
+    color: var(--matcha);
+    font-family: var(--tipo-sans-serif);
+    padding-bottom: 25px;
+}
+
+.about_bkg span::before {
+    content: '';
+    width: 40px;
+    height: 3px;
+    display: inline-block;
+    background-color: var(--matcha);
+    margin-right: 10px;
+    position: relative;
+    bottom: 3px;
+  }
+
 .about_bkg h1{
     font-size: 3rem;
-    font-weight: lighter;
+    font-weight: normal;
     margin-bottom: 20px;
 }
 
 .about_bkg p{
-    font-size: 14px;
+    font-family: var(--font-chronicle);
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 50px;
 }
 
 .about_txt{
-    width: 70%;
-    margin-left: 20px; 
+    width: 50%;
+    margin-left: 20px;
 }
 
 .vicky{
-    width: 400px;
+    width: 100%;
 }
 
 /* ----------- FAQ PAGE --------------- */
@@ -270,6 +298,10 @@ footer{
 /* ----------- MEDIA QUERYS --------- */
 @media only screen and (max-width: 426px){
 
+    .menu {
+        margin-bottom: 100px;
+    }
+
 /*----------------- menu ------------------- */ 
     .btn_menu{
         display: block;
@@ -309,13 +341,14 @@ footer{
     .footer_options{
         display: grid;
         grid-template-areas: "lista location"
-                             "contact media";
+        "contact media";
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         justify-content: center;
         align-items: center;
         gap: 5px;
         padding: 20px 5px;
+        margin-top: 50px;
     }
 
     .footer_options div{
@@ -346,7 +379,7 @@ footer{
     }
 
     .about_bkg p{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .about_bkg h1{
@@ -358,7 +391,6 @@ footer{
 
     .about_bkg::after{
         content: '';
-        background-color: var(--matcha);
         height: 700px;
         width: 95%;
         position: absolute;
@@ -374,18 +406,6 @@ footer{
     .about_me{
         height: 720px;
     }
-
-    .about_bkg::after{
-        content: '';
-        background-color: var(--matcha);
-        height: 450px;
-        width: 95%;
-        position: absolute;
-        z-index: -1000;
-        right: 0;
-        top: 225px;
-    }
-
 }
 
 @media only screen and (max-height: 426px){

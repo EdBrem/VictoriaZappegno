@@ -11,7 +11,6 @@
     <header>
         <div class="menu">
             <img src="img/logo_blanco.png" alt="logo" id="top" width="100px">
-        
             <label for="menu" class="btn_menu">
                 <ion-icon name="menu-outline"></ion-icon>
             </label>
@@ -25,14 +24,14 @@
                 <a href="html/faq.html">FAQ</a>
             </div>
         </div>
-    </header>   
+    </header>
 <!-- BANNER SLIDER INICIO -->
     <section id="banner_inicio" data-carousel>
             <button>
                 <ion-icon name="chevron-back-circle-outline" data-carousel-button id="previous"></ion-icon>
             </button>
             <button>
-                <ion-icon name="chevron-forward-circle-outline" data-carousel-button id="next_img"></ion-icon>  
+                <ion-icon name="chevron-forward-circle-outline" data-carousel-button id="next_img"></ion-icon>
             </button>
         <ul data-slides>
             <li class="slide" data-active><img src="img/home/CARRUSEL1.JPG" alt="foto_muestra"></li>
@@ -44,10 +43,6 @@
             <li class="slide"><img src="img/home/CARRUSEL7.JPG" alt="foto_muestra"></li>
             <li class="slide"><img src="img/home/CARRUSEL8.JPG" alt="foto_muestra"></li>
         </ul>
-
-
-
-        <!-- <img src="img/home/CARRUSEL1.JPG" alt="fotografía_muestra" id="imagen_banner"> -->
 
         <div class="texto_inicio">
             <p>VICTORIA ZAPPEGNO</p>
@@ -71,7 +66,6 @@
                 </a>
             </article>
             <div class="photoshoot"></div>
-            
             <article class="wedd">
                 <div>
                     <h3 class="titulo_chico"> W E D D I N G </h3>
@@ -92,41 +86,102 @@
             <h3>¿Why me?</h3>
 
             <div class="slider_container">
-                <img src="./assets/left_arrow.svg" class="slider_arrow" alt="before" id="before">
 
                 <section class="slider_body slider_body--show" data-id="1">
                     <div class="slider_text">
-                        <h2 class="review_name">Ruth Ellefson</h2>
+                        <div class="line">
+                            <h2 class="review_name">Ruth Ellefson</h2>
+                            <p class="calificacion">
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label>★</label>
+                            </p>
+                        </div>
                         <p class="slider_review">“We are very satisfied, my husband and I, with Vicky’s work. We have known her for several years. Yessss! We highly recommend her!”</p>
                     </div>
                 </section>
 
                 <section class="slider_body" data-id="2">
                     <div class="slider_text">
-                        <h2 class="review_name">Romina Fernanda Depetris</h2>
+                        <div class="line">
+                            <h2 class="review_name">Romina Fernanda Depetris</h2>
+                            <p class="calificacion">
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label>★</label>
+                                <label>★</label>
+                            </p>
+                        </div>
                         <p class="slider_review">Hermosa experiencia haber realizado una sesión junto a Vicky. Es realmente increíble cómo capturó el momento y con la naturalidad que lo hizo. Las fotografías invadieron nuestro hogar. Muchísimas gracias.</p>
                     </div>
                 </section>
 
                 <section class="slider_body" data-id="3">
                     <div class="slider_text">
-                        <h2 class="review_name">Jodie O’Grant Shafer</h2>
+                        <div class="line">
+                            <h2 class="review_name">Jodie O’Grant Shafer</h2>
+                            <p class="calificacion">
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                            </p>
+                        </div>
                         <p class="slider_review">We had the pleasure of having Vicky do our first photo shoot together. The experience was top notch. Vicky was amazing. She made us feel so relaxed and comfortable. The pictures are excellent! <br> This is an experience that we will never forget and our pictures are a daily reminder. I highly recommend Vicky Zappegno</p>
                     </div>
                 </section>
 
                 <section class="slider_body" data-id="4">
                     <div class="slider_text">
-                        <div class="slider_tittle">
+                        <div class="slider_tittle line">
                             <h2 class="review_name">Carla Dogliani</h2>
+                            <p class="calificacion">
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label>★</label>
+                            </p>
                         </div>
                         <p class="slider_review">Recomiendo muchísimo a Vicky. No solo saca fotos y las mejores, sino que también logra captar emociones, olores, sensaciones, momentos con textura que los plasma en fotografías. Te plantea un juego en donde juegas y ella crea maravillas para toda la vida</p>
                     </div>
                 </section>
+            </div>
 
+            <div class="slider-controllers">
+                <img src="./assets/left_arrow.svg" class="slider_arrow" alt="before" id="before">
+                <p>1 / 3</p>
                 <img src="./assets/right_arrow.svg" class="slider_arrow" alt="after" id="after">
             </div>
         </div>
+    </section>
+    <!-- FORM REVIEW -->
+    <section class="form-review">
+        <h3>Tell me about yor experience</h3>
+        <form action="./services/SentQualification.php" method="post">
+            <p>Name *</p>
+            <input type="text" name="name" id="name">
+            <p>Number of stars *</p>
+            <p class="clasificacion">
+                <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                --><label for="radio1">★</label><!--
+                --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                --><label for="radio2">★</label><!--
+                --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                --><label for="radio3">★</label><!--
+                --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                --><label for="radio4">★</label><!--
+                --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                --><label for="radio5">★</label>
+            </p>
+            <p>Your Review *</p>
+            <textarea name="review" id="review"></textarea>
+            <input type="submit" value="Send Message">
+        </form>
     </section>
 <!-- FIN DE SECCIONES -->
 <!-- INICIO DEL FOOTER -->
@@ -141,7 +196,7 @@
                     <li><a href="/html/contact.html">Contact</a></li>
                     <li><a href="/html/faq.html">FAQ</a></li>
                 </ul>
-            </div> 
+            </div>
             <div class="location">
                 <h3>My location</h3>
                 <p>Playa del Carmen, México</p>

@@ -338,12 +338,12 @@ footer{
     justify-content: center;
     margin: auto;
     grid-area: photo;
-    width: 90%;
+    width: 60%;
     padding: 20px 0;
 }
 
 .photoshoot{
-    background-image: url(../img/home/PHOTOSHOOT.jpg);
+    background-image: url(../img/home/PHOTOSHOOT.JPG);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -372,7 +372,7 @@ footer{
 /* ----------- REVIEWS --------------- */
 
 .reviews{
-    height: 45vh;
+    height: auto;
     margin-top: 35px;
     padding: 15px 0;
 }
@@ -396,7 +396,7 @@ footer{
     grid-template-columns: 50px 1fr 50px;
     align-items: center;
     gap: 1em;
-    width: 70%;
+    width: 90%;
     margin: auto;
     margin-top: 50px;
 }   
@@ -426,20 +426,132 @@ footer{
     border-radius: 3px;
 }
 
+.slider_text .line {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
 .slider_text h2{
+    display: inline-block;
     font-family: var(--tipo-sans-serif);
+    font-size: 18px;
+    width: auto;
+}
+.slider_text .calificacion {
+    display:inline-block;
+    font-size: 18px;
+    width: auto;
+}
+.slider_text .calificacion .checked{
+    color:orange
+}
+
+.slider-controllers {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.slider-controllers p {
     font-size: 16px;
-    margin-bottom: 10px;
+    color: var(--dark-love);
 }
 
 .slider_arrow{
     cursor: pointer;
-    width: 90%;
+    width: 35px;
+    border: 1px solid var(--dark-love);
+    border-radius: 50%;
+    margin: auto 20px;
+    padding: 5px;
+    transition: 300ms ease;
 }
 
-.slider_arrow:nth-of-type(2){
-    justify-self: end;
+.slider_arrow:hover{
+    background-color: var(--light-gray);
 }
+
+/* Formulario de Reviews */
+
+.form-review {
+    margin: 50px auto;
+}
+
+.form-review h3{
+    font-family: var(--font-chronicle);
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.form-review form {
+    font-family: var(--font-chronicle);
+    display:flex;
+    flex-direction: column;
+    width: 600px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.form-review p {
+    font-family: var(--font-chronicle);
+    margin: 10px 0;
+    font-size: 16px;
+}
+.form-review input[type="text"],
+.form-review textarea {
+    padding: 15px 10px;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+}
+.form-review textarea {
+    height: 150px;
+}
+
+.form-review input[type="submit"] {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 0;
+    border: none;
+    color: #fff;
+    background-color: #999;
+    border-radius: 5px;
+    border-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-review input[type="radio"] {
+    display: none;
+}
+
+.form-review label {
+    color: grey;
+}
+
+.form-review .clasificacion {
+    display: inline-block;
+    text-align: left;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    font-size: 18px;
+}
+
+.form-review label:hover,
+.form-review label:hover ~ label {
+    color: orange;
+}
+
+.form-review input[type="radio"]:checked ~ label {
+    color: orange;
+}
+
 
 /* ------------------- DESKTOP 3 ---------------------- */
 /* ------------------- PORTFOLIO ---------------------- */
@@ -590,6 +702,7 @@ footer{
 }
 
 .cont_prices{
+    padding-top: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -620,16 +733,38 @@ footer{
     grid-template-columns: repeat(5,1fr);
 }
 
+
+
 .prices_card{
+    font-family: var(--font-chronicle);
     width: 200px;
     margin: 15px;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .pack{
-    background:var(--sand);
     text-align: center;
-    padding: 5px;
+    padding: 50px 20PX;
+    color: white;
 }
+
+.prices_card:first-child .pack{
+    background:var(--sage);
+}
+.prices_card:nth-child(2) .pack{
+    background:var(--sand);
+}
+.prices_card:nth-child(3) .pack{
+    background:var(--matcha);
+}
+.prices_card:nth-child(4) .pack{
+    background:var(--sage);
+}
+.prices_card:nth-child(5) .pack{
+    background:var(--dark-love);
+}
+
 
 
 .pack h2{
@@ -657,22 +792,27 @@ footer{
 }
 
 .price{
+
     text-align: center;
-    padding: 10px;
+    padding: 20px 10px;
     background: var(--light-gray);
-    border-top: 2px solid var(--sand);
+    border-top: 1.5px solid var(--sand);
 }
 
+.price p::before {
+    content: '$ ';
+    background: transparent;
+}
 .price p{
+    font-family: var(--tipo-chronicle);
     color: #000;
-    font-family: serif;
-    font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 /* ------------ CONTACTO ---------------- */
 
 .contacto{
+    font-family: var(--tipo-chronicle);
     width: 100%;
     position: relative;
     height: 100vh;
@@ -696,6 +836,7 @@ footer{
 
 .form_text h2{
     font-size: 2.5rem;
+    font-weight: normal;
 }
 
 .form_text p{
@@ -705,35 +846,37 @@ footer{
 }
 
 legend{
-    font-family: var(--tipo-sans-serif);
     font-size: 12px;
     margin-bottom: 5px;
 }
 
 .form_contacto input{
-    width: 315px;
+    width: 515px;
     margin: 0 0 15px;
-    padding: 5px 0;
+    padding: 15px 0;
     border: none;
     border-radius: 3px;
+
 }
 
 .form_contacto textarea{
     border-radius: 4px;
     border: none;
     resize: none;
-    width: 315px;
+    width: 515px;
     height: 150px;
 }
 
-.form_btn{
-    width: 315px;
-    padding: 10px 0 ;
+.form_contacto input.form_btn{
+    background-color:var(--sage);
+    width: 515px;
+    padding: 20px 0 ;
+    margin: 40px 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
     border-radius: 4px;
     border: none;
-    background-color:var(--sage);
-    color: #fff;
-    margin-top: 10px;
 }
 
 /* BANNERS PORTFOLIO */
@@ -912,6 +1055,52 @@ legend{
     grid-row: 3/5;
 }
 
+/* Page 404 */
+
+
+.error-page {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 20%;
+}
+
+.error-page img {
+    width: 100px;
+    margin-bottom: 40px;
+}
+
+.error-page h1 {
+    font-family: var(--font-chronicle);
+    font-size: 75px;
+    font-weight: normal;
+}
+
+.error-page h2::before{
+    content: '';
+    width: 40px;
+    height: 3px;
+    display: inline-block;
+    background-color: var(--matcha);
+    margin-right: 10px;
+    position: relative;
+    bottom: 3px;
+}
+
+.error-page h2 {
+    font-family: var(--tipo-sans-serif);
+    color: var(--matcha);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.error-page p {
+    font-family: var(--font-chronicle);
+    font-size: 16px;
+    margin: 10px 0;
+}
+
 
 /*  */
 /*  */
@@ -931,7 +1120,8 @@ legend{
     .reviews{
         height: 490px;
     }
-    
+
+
 }
 
 @media only screen and (max-width:1024px){
@@ -978,7 +1168,7 @@ legend{
 /* ------------------MEDIA DISPOSITIVOS MOVILES ---------------- */
 /*  */
 
-@media only screen and (max-width: 426px){
+@media only screen and (min-width: 326px) and (max-width:800px){
     /*------------------- MENÚ ------------------ */
     .btn_menu{
         display: block;
@@ -1044,7 +1234,6 @@ legend{
         'img2 img2 wedd wedd';
         gap: 10px;
         margin-top: 15px;
-        
     }
 
     .description{
@@ -1052,7 +1241,7 @@ legend{
         margin-bottom: 10px;
         font-size: 2rem;
     }
-    
+
     .wedd{
         width: 90%;
         padding-right: 10px;
@@ -1069,6 +1258,10 @@ legend{
 
     .titulo_chico::before{
         width: 15px;
+    }
+
+    .session .photo {
+        width: 80%;
     }
 
     .reviews{
@@ -1133,7 +1326,7 @@ legend{
     .form_contacto input{
         width: 310px;
         margin: 0 0 15px;
-        padding: 5px 0;
+        padding: 15px 0;
         border: none;
         border-radius: 3px;
     }
@@ -1146,7 +1339,7 @@ legend{
         height: 150px;
     }
     
-    .form_btn{
+    .form_contacto input.form_btn{
         width: 310px;
     }
 
@@ -1160,7 +1353,7 @@ legend{
     }
     .prices_banner{
         width: 100%;
-        height: 2100px;
+        height: 3200px;
         padding: 0;
     }
 
@@ -1211,5 +1404,23 @@ legend{
     .container_cards{
         display: grid;
         grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+@media only screen and (min-width: 250px){
+    /* Sliders carousel */
+    #carousel_portfolio .carousel .carousel_container {
+        width: 100%;
+    }
+
+    .arrow-left {
+        left: 0;
+        z-index: 1000;
+    }
+
+    .arrow-right{
+        right: 0;
+        z-index: 1000;
     }
 }
