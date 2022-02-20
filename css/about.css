@@ -296,7 +296,8 @@ footer{
 }
 
 /* ----------- MEDIA QUERYS --------- */
-@media only screen and (max-width: 426px){
+
+@media only screen and (max-width: 720px){
 
     .menu {
         margin-bottom: 100px;
@@ -399,16 +400,4 @@ footer{
         top: 180px;
     }
 
-}
-
-@media only screen and (min-width: 426px){
-
-    .about_me{
-        height: 720px;
-    }
-}
-
-@media only screen and (max-height: 426px){
-
-    
 }
