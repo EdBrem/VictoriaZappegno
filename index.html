@@ -8,6 +8,7 @@
     <title> VZ | HOME</title>
 </head>
 <body>
+    <div id="pantalla-tenue"></div>
     <header>
         <div class="menu">
             <img src="img/logo_blanco.png" alt="logo" id="top" width="100px">
@@ -162,7 +163,7 @@
     <!-- FORM REVIEW -->
     <section class="form-review">
         <h3>Tell me about your experience</h3>
-        <form action="./services/SentQualification.php" method="post">
+        <form method="post" id="formulario">
             <p>Name *</p>
             <input type="text" name="name" id="name">
             <p>Number of stars *</p>
@@ -180,7 +181,7 @@
             </p>
             <p>Your Review *</p>
             <textarea name="review" id="review"></textarea>
-            <input type="submit" value="Send Message">
+            <input id="enviar" type="submit" value="Send Message">
         </form>
     </section>
 <!-- FIN DE SECCIONES -->
@@ -215,8 +216,10 @@
     </footer>
 
 <!-- Scripts -->
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/sweetalert.js"></script>
 <script src="js/slider.js"></script>
+<script src="js/send-qualification.js"></script>
 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 
 </body>

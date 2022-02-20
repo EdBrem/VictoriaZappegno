@@ -1444,3 +1444,15 @@ legend{
         z-index: 1000;
     }
 }
+
+
+/* Pantalla tenue para envio de formularios */
+
+#pantalla-tenue.ok {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    z-index: 9999;
+    position: fixed;
+}
