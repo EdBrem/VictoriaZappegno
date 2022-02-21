@@ -1386,6 +1386,39 @@ legend{
         margin-left: 1em;
     }
 
+
+
+    /* BANNERS PORTFOLIO */
+
+    /* PABLO Mire */
+    .portfolio_pablo .portfolio_banner {
+        width: 100%;
+        height: 100vh;
+        background: url(../img/Cont_portfolios/Pablo_Mire/mir_pa1.JPG);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: 70%, 0;
+        display: flex;
+        position: relative;
+        top: 0;
+        z-index: -100;
+        justify-content: center;
+    }
+    /* wally */
+    .portfolio_wally .portfolio_banner {
+        width: 100%;
+        height: 100vh;
+        background: url(../img/Cont_portfolios/Wally/wally1.JPG);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: 30%, 0;
+        display: flex;
+        position: relative;
+        top: 0;
+        z-index: -100;
+        justify-content: center;
+    }
+
 }
 
 /*  ---------------------- TELEFONO EN HORIZONTAL ------------- */
