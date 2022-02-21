@@ -260,6 +260,10 @@ p{
     font-size: 1em;
 }
 
+.container#faq .item p a{
+    color: var(--dark-love);
+}
+
 
 
 

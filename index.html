@@ -28,27 +28,20 @@
     </header>
 <!-- BANNER SLIDER INICIO -->
     <section id="banner_inicio" data-carousel>
-            <button>
+            <button id="btn_prev">
                 <ion-icon name="chevron-back-circle-outline" data-carousel-button id="previous"></ion-icon>
             </button>
-            <button>
+            <button id="btn_next">
                 <ion-icon name="chevron-forward-circle-outline" data-carousel-button id="next_img"></ion-icon>
             </button>
         <ul data-slides>
-            <li class="slide" data-active><img src="img/home/CARRUSEL1.JPG" alt="foto_muestra"></li>
-            <li class="slide"><img src="img/home/CARRUSEL2.JPG" alt="foto_muestra"></li>
-            <li class="slide"><img src="img/home/CARRUSEL3.JPG" alt="foto_muestra"></li>
-            <li class="slide"><img src="img/home/CARRUSEL4.JPG" alt="foto_muestra"></li>
-            <li class="slide"><img src="img/home/CARRUSEL5.JPG" alt="foto_muestra"></li>
-            <li class="slide"><img src="img/home/CARRUSEL6.JPG" alt="foto_muestra"></li>
-            <li class="slide"><img src="img/home/CARRUSEL7.JPG" alt="foto_muestra"></li>
-            <li class="slide"><img src="img/home/CARRUSEL8.JPG" alt="foto_muestra"></li>
+            <li class="slide" data-active><img src="" alt="foto_muestra" id="img_banner"></li>
         </ul>
 
         <div class="texto_inicio">
             <p>VICTORIA ZAPPEGNO</p>
             <h1>Let us capture the magic of your moment</h1>
-            <a href=""><button class="btn_inicio"> Book Now </button></a>
+            <a href="/html/contact.html"><button class="btn_inicio"> Book Now </button></a>
         </div>
     </section>
 
@@ -62,7 +55,7 @@
                 </div>
                 <p class="description">Capture your most beautiful memories in photos</p>
                 <p>I am ready to portray your beauty, are you?</p>
-                <a href="">
+                <a href="/html/portfolio.html">
                     <button class="btn"> See More </button>
                 </a>
             </article>
@@ -72,7 +65,7 @@
                     <h3 class="titulo_chico"> W E D D I N G </h3>
                     <p class="description">I am ready to portray the beauty of your encounter, are you?</p>
                     <p>It's my pleasure to do so.</p>
-                    <a href="">
+                    <a href="/html/portfolio.html">
                         <button class="btn"> See More </button>
                     </a>
                 </div>
@@ -107,7 +100,7 @@
                 <section class="slider_body" data-id="2">
                     <div class="slider_text">
                         <div class="line">
-                            <h2 class="review_name">Romina Fernanda Depetris</h2>
+                            <h2 class="review_name">Jodie O’Grant Shafer</h2>
                             <p class="calificacion">
                                 <label class="checked">★</label>
                                 <label class="checked">★</label>
@@ -116,14 +109,14 @@
                                 <label>★</label>
                             </p>
                         </div>
-                        <p class="slider_review">Hermosa experiencia haber realizado una sesión junto a Vicky. Es realmente increíble cómo capturó el momento y con la naturalidad que lo hizo. Las fotografías invadieron nuestro hogar. Muchísimas gracias.</p>
+                        <p class="slider_review">We had the pleasure of having Vicky do our first photo shoot together. The experience was top notch. Vicky was amazing. She made us feel so relaxed and comfortable. The pictures are excellent!<br>This is an experience that we will never forget and our pictures are a daily reminder. I highly recommend Vicky Zappegno!</p>
                     </div>
                 </section>
 
                 <section class="slider_body" data-id="3">
                     <div class="slider_text">
                         <div class="line">
-                            <h2 class="review_name">Jodie O’Grant Shafer</h2>
+                            <h2 class="review_name">Wally Fernandez</h2>
                             <p class="calificacion">
                                 <label class="checked">★</label>
                                 <label class="checked">★</label>
@@ -132,7 +125,7 @@
                                 <label class="checked">★</label>
                             </p>
                         </div>
-                        <p class="slider_review">We had the pleasure of having Vicky do our first photo shoot together. The experience was top notch. Vicky was amazing. She made us feel so relaxed and comfortable. The pictures are excellent! <br> This is an experience that we will never forget and our pictures are a daily reminder. I highly recommend Vicky Zappegno</p>
+                        <p class="slider_review">Easily the best experience with a photographer to date! Vicky is super personable and very talented at her craft. I can’t say enough about how professional she is. Vicky was instantly able to put me at ease, and capture some amazing photographs all while directing me on how to pose since I am very shy. The session was super fun, don’t pass up the chance to work with her!</p>
                     </div>
                 </section>
 
@@ -151,11 +144,92 @@
                         <p class="slider_review">Recomiendo muchísimo a Vicky. No solo saca fotos y las mejores, sino que también logra captar emociones, olores, sensaciones, momentos con textura que los plasma en fotografías. Te plantea un juego en donde juegas y ella crea maravillas para toda la vida</p>
                     </div>
                 </section>
+
+                <section class="slider_body" data-id="5">
+                    <div class="slider_text">
+                        <div class="slider_tittle line">
+                            <h2 class="review_name">Snezana Almazan</h2>
+                            <p class="calificacion">
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label>★</label>
+                            </p>
+                        </div>
+                        <p class="slider_review">We had a really fun session, the way she works brings the best out of you and the photos reflect that! Very creative and professional! You will have a great experience with Vicky!</p>
+                    </div>
+                </section>
+
+                <section class="slider_body" data-id="6">
+                    <div class="slider_text">
+                        <div class="slider_tittle line">
+                            <h2 class="review_name">Romina Fernanda Depetris</h2>
+                            <p class="calificacion">
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label>★</label>
+                            </p>
+                        </div>
+                        <p class="slider_review">Hermosa experiencia haber realizado una sesión junto a Vicky. Es realmente increíble cómo capturó el momento y con la naturalidad que lo hizo. Las fotografías invadieron nuestro hogar. Muchísimas gracias.</p>
+                    </div>
+                </section>
+
+                <section class="slider_body" data-id="7">
+                    <div class="slider_text">
+                        <div class="slider_tittle line">
+                            <h2 class="review_name">Virginia Martinelli</h2>
+                            <p class="calificacion">
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label>★</label>
+                            </p>
+                        </div>
+                        <p class="slider_review">Recomiendo mucho a Vicky!!! Hice fotos con ella y no solo el resultado superó muchísimo mis expectativas sino que la experiencia de la sesión fue divertida y muy cómoda (era mi primera sesión y tenía un poco de miedo). Gracias por tu trabajo Vicky!!! Espero ansiosa nuestra próxima sesión</p>
+                    </div>
+                </section>
+
+                <section class="slider_body" data-id="8">
+                    <div class="slider_text">
+                        <div class="slider_tittle line">
+                            <h2 class="review_name">Gina de Santiago</h2>
+                            <p class="calificacion">
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label>★</label>
+                            </p>
+                        </div>
+                        <p class="slider_review">Una fotografía llena de corazón y pasión. 100% profesional y siempre increíbles trabajos: ya sean fotos familiares, de pareja, bodas… Saca lo mejor de ti en cada fotografía, vale totalmente la pena hacer fotos con una fotógrafa tan divertida y sobre todo humana</p>
+                    </div>
+                </section>
+
+                <section class="slider_body" data-id="9">
+                    <div class="slider_text">
+                        <div class="slider_tittle line">
+                            <h2 class="review_name">Verónica Ruchtein</h2>
+                            <p class="calificacion">
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label class="checked">★</label>
+                                <label>★</label>
+                            </p>
+                        </div>
+                        <p class="slider_review">Vicky me ha sacado fotos en varias ocasiones y logra siempre capturar una esencia única que no es fácil de encontrar. La super recomiendo si estas buscando retratos de primera calidad y con mucho profesionalismo a la vez que pasas un mega buen rato con ella</p>
+                    </div>
+                </section>
+
             </div>
 
             <div class="slider-controllers">
                 <img src="./assets/left_arrow.svg" class="slider_arrow" alt="before" id="before">
-                <p id="slider-num">1 / 4</p>
+                <p id="slider-num">1 / 9</p>
                 <img src="./assets/right_arrow.svg" class="slider_arrow" alt="after" id="after">
             </div>
         </div>

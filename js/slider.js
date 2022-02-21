@@ -20,24 +20,48 @@ function changePosition(change){
 
     slider[currentElement-1].classList.toggle('slider_body--show')
     slider[value-1].classList.toggle('slider_body--show')
-    sliderNum.textContent = value + ' / 4'
+    sliderNum.textContent = value + ' / 9'
 
 }
 
 //  Slider banner principal 
 
-const botones = document.querySelectorAll('[data-carousel-button]')
+const btn_prev = $('#btn_prev')
+const btn_next = $('#btn_next')
 
-botones.forEach(button => {
-    button.addEventListener('click', ()=> {
-        const offset = button.dataset.carouselButton === 'next' ? 1 : -1
-        const slides = button.closest('[data-carousel]').querySelector('[data-slides]')
-        const activeSlide = slides.querySelector('[data-active]')
-        let newIndex = [...slides.children].indexOf(activeSlide) + offset
-        if(newIndex < 0) newIndex = slides.children.length - 1
-        if(newIndex >= slides.children.length) newIndex = 0
+const images_src = [
+    'img/home/CARRUSEL1.JPG',
+    'img/home/CARRUSEL2.JPG',
+    'img/home/CARRUSEL3.JPG',
+    'img/home/CARRUSEL4.JPG',
+    'img/home/CARRUSEL5.JPG',
+    'img/home/CARRUSEL6.JPG',
+    'img/home/CARRUSEL7.JPG',
+    'img/home/CARRUSEL8.JPG'
+]
+let pos_actual = 0
+$('#img_banner').attr("src",images_src[pos_actual]);
 
-        slides.children[newIndex].dataset.active = true
-        delete activeSlide.dataset.active
-    })
+
+btn_prev.click(() => {
+    $('#img_banner').attr("src",images_src[pos_actual]).fadeOut(100);
+    setTimeout(()=> {
+        pos_actual--
+        validarPos()
+        $('#img_banner').attr("src",images_src[pos_actual]).fadeIn(100);
+    }, 200)
 })
+
+btn_next.click(() => {
+    $('#img_banner').attr("src",images_src[pos_actual]).fadeOut(100);
+    setTimeout(()=> {
+        pos_actual++
+        validarPos()
+        $('#img_banner').attr("src",images_src[pos_actual]).fadeIn(100);
+    }, 200)
+})
+
+function validarPos() {
+    if(pos_actual >= images_src.length) pos_actual = 0
+    if(pos_actual < 0) pos_actual = (images_src.length) - 1
+}
