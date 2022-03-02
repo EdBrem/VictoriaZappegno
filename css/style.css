@@ -446,7 +446,7 @@ footer{
     width: auto;
 }
 .slider_text .calificacion .checked{
-    color:orange
+    color:#67d0c2;
 }
 
 .slider-controllers {
@@ -545,11 +545,11 @@ footer{
 
 .form-review label:hover,
 .form-review label:hover ~ label {
-    color: orange;
+    color: #67d0c2;
 }
 
 .form-review input[type="radio"]:checked ~ label {
-    color: orange;
+    color: #67d0c2;
 }
 
 
@@ -1286,12 +1286,18 @@ legend{
     }
     .slider_text .line {
         margin-bottom: 20px;
+        flex-direction: column-reverse;
+        align-items: flex-start;
     }
     .slider_text h2 {
         font-size: 16px;
     }
     .slider_text .calificacion {
-        font-size: 14px;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .slider_text p {
+        line-height: 30px;
     }
 /* --------------- FOOTER -------------- */
     .footer_options{

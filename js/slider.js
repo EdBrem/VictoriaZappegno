@@ -32,7 +32,7 @@ const btn_next = $('#btn_next')
 const images_src = [
     'img/home/CARRUSEL1.JPG',
     'img/home/CARRUSEL2.JPG',
-    'img/home/CARRUSEL3.JPG',
+    'img/home/CARRUSEL3.jpg',
     'img/home/CARRUSEL4.JPG',
     'img/home/CARRUSEL5.JPG',
     'img/home/CARRUSEL6.JPG',
