@@ -2,6 +2,7 @@
     const slider = [...document.querySelectorAll('.slider_body')]
     const arrowNext = document.querySelector('#after')
     const arrowBefore = document.querySelector('#before')
+    const sliderNum = document.getElementById('slider-num')
     let value;
 
     arrowNext.addEventListener('click', ()=>changePosition(1))
@@ -18,4 +19,5 @@
 
         slider[currentElement-1].classList.toggle('slider_body--show')
         slider[value-1].classList.toggle('slider_body--show')
+        sliderNum.textContent = value + ' / 4'
     }
