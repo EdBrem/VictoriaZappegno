@@ -1117,81 +1117,65 @@ legend{
 /*  */
 /* ------------------ AJUSTES GRALES TABLETAS EN ADELANTE  ---------------- */
 /*  */
-@media only screen and (min-width: 426px){
-
-    .session{
+@media only screen and (min-width: 426px) {
+    .session {
         margin-bottom: 20px;
     }
-
-    .reviews{
+    .reviews {
         height: 490px;
     }
 
-
 }
-
-@media only screen and (max-width:1024px){
-    .container_cards{
+@media only screen and (max-width:1024px) {
+    .container_cards {
         display: grid;
         grid-template-columns: repeat(4,1fr);
     }
-
-    .prices_banner{
+    .prices_banner {
         height: 1000px;
         padding: 50px 0;
     }
-
 }
-
 /*  */
 /* ------------------MEDIA TABLETAS ---------------- */
 /*  */
-
-@media only screen and (min-width:426px) and (max-width:769px){
-    .container_cards{
+@media only screen and (min-width:426px) and (max-width:769px) {
+    .container_cards {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         margin: 10px 0;
         gap: 10px;
     }
-
-    .prices_banner{
+    .prices_banner {
         padding: 0;
         height: 1000px;
     }
-
-    .prices_card{
+    .prices_card {
         margin: 0;
     }
-
-    .cont_prices{
+    .cont_prices {
         margin-left: 20px;
     }
-
 }
-
 /*  */
 /* ------------------MEDIA DISPOSITIVOS MOVILES ---------------- */
 /*  */
-
-@media only screen and (min-width: 326px) and (max-width:800px){
+@media only screen and (min-width: 326px) and (max-width:800px) {
     /*------------------- MENÚ ------------------ */
-    .btn_menu{
+    .btn_menu {
         display: block;
         cursor: pointer;
         position: fixed;
         right: 30px;
         z-index: 1500;
     }
-
-    .btn_menu ion-icon{
+    .btn_menu ion-icon {
         color: var(--dark-love);
         border: solid 2px var(--linen);
         border-radius: 3px;
         background-color: rgba(170,161,153,.3);
     }
-
-    .nav_menu{
+    .nav_menu {
         position: fixed;
         top: 0;
         display: flex;
@@ -1206,31 +1190,25 @@ legend{
         clip-path: polygon(0 0 , 0 0 , 0 100%, 0% 100%);
         transition: clip-path .7s;
     }
-
-    .btn_check:checked + .nav_menu{
+    .btn_check:checked + .nav_menu {
         clip-path:polygon(100% 0 ,0 0, 0 100%, 100% 100%);
     }
     /* ---------------- banner ------------------ */
-
-    .texto_inicio{
+    .texto_inicio {
         display: flex;
         flex-direction: column;
         position: relative;
         margin: 0 auto;
     }
-
-    .texto_inicio h1{
+    .texto_inicio h1 {
         font-size: 2rem;
         bottom: 5px;
     }
-
-    #banner_inicio{
+    #banner_inicio {
         height: 100vh;
     }
-
-
     /* ---------------- SECCIÓN CHOICES --------- */
-    .choices{
+    .choices {
         height: 100%;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: .1fr 1fr 1fr;
@@ -1241,46 +1219,38 @@ legend{
         gap: 10px;
         margin-top: 15px;
     }
-
-    .description{
+    .description {
         font-family: serif;
         margin-bottom: 10px;
         font-size: 2rem;
     }
-
-    .wedd{
+    .wedd {
         width: 90%;
         padding-right: 10px;
     }
-
-    .session{
+    .session {
         margin-bottom: 20px;
         height: 882px;
     }
-
-    .session h2{
+    .session h2 {
         margin: auto;
     }
-
-    .titulo_chico::before{
+    .titulo_chico::before {
         width: 15px;
     }
-
     .session .photo {
         width: 80%;
     }
-
-    .reviews{
+    .reviews {
         height: auto;
     }
 /* --------- SLIDERS ------------- */
-    .slider_container{
+    .slider_container {
         width: 100%;
         margin-top: 20px;
         grid-template-columns: 25px 1fr 25px;
     }
-
-    .slider_text{
+    .slider_text {
         height: fit-content;
         margin: auto;
     }
@@ -1300,7 +1270,7 @@ legend{
         line-height: 30px;
     }
 /* --------------- FOOTER -------------- */
-    .footer_options{
+    .footer_options {
         display: grid;
         grid-template-areas: "lista location"
                              "contact media";
@@ -1311,91 +1281,74 @@ legend{
         gap: 5px;
         padding: 20px 5px;
     }
-
-    .footer_options div{
+    .footer_options div {
         padding: 5px;
     }
-    
     /* ------------- CONTACTO ------------- */
-    .form_contacto{
+    .form_contacto {
         color: #fff;
         position: absolute;
         top: 50%;
         transform: translateY(-50%) translateX(-50%);
         left: 50%;
-
     }
-    .form_text{
+    .form_text {
         margin-bottom: 30px;
     }
-    
-    .form_text h2{
+    .form_text h2 {
         font-size: 2rem;
     }
-    
-    .form_text p{
+    .form_text p {
         font-weight: 400;
         word-spacing: 2px;
     }
-    
-    legend{
+    legend {
         font-family: var(--tipo-sans-serif);
         font-size: 12px;
         margin-bottom: 5px;
     }
-    
-    .form_contacto input{
+    .form_contacto input {
         width: 310px;
         margin: 0 0 15px;
         padding: 15px 0;
         border: none;
         border-radius: 3px;
     }
-    
-    .form_contacto textarea{
+    .form_contacto textarea {
         border-radius: 4px;
         border: none;
         resize: none;
         width: 310px;
         height: 150px;
     }
-    
-    .form_contacto input.form_btn{
+    .form_contacto input.form_btn {
         width: 310px;
     }
-
     /* ---------- PRICES ------------ */
-    .container_cards{
+    .container_cards {
         display: grid;
         grid-template-columns: 1fr;
         width: 100%;
         gap: 10px;
         margin: 10px 0;
     }
-    .prices_banner{
+    .prices_banner {
         width: 100%;
         height: auto;
         padding: 0;
     }
-
-    .prices_banner h1{
+    .prices_banner h1 {
         font-size: 2.5rem;
         margin: 20px 0 30px 0;
     }
-
-    .prices_card{
+    .prices_card {
         margin: 15px auto;
         width: 300px;
     }
-
-    .cont_prices{
+    .cont_prices {
         margin-left: 1em;
     }
-
-
-
     /* BANNERS PORTFOLIO */
-
     /* PABLO Mire */
     .portfolio_pablo .portfolio_banner {
         width: 100%;
@@ -1424,69 +1377,54 @@ legend{
         z-index: -100;
         justify-content: center;
     }
-
 }
-
 /*  ---------------------- TELEFONO EN HORIZONTAL ------------- */
 
 @media only screen and (min-height: 320px) and (max-height:425px){
-    .session{
+    .session {
         height: 250vh;
     }
-
-    .reviews{
-        height: 400px ;
+    .reviews {
+        height: 400px;
     }
-    .texto_inicio button{
+    .texto_inicio button {
         display: none;
     }
     .texto_inicio{
         top: 50%;
     }
-
-    .texto_portfolio{
+    .texto_portfolio {
         top: 40%;
     }
-
-    .texto_portfolio p{
+    .texto_portfolio p {
         font-size: 2rem;
     }
-
-    .texto_portfolio h1{
+    .texto_portfolio h1 {
         margin-bottom: 0;
     }
-
-    .contacto{
+    .contacto {
         height: 640px;
     }
-
-    .container_cards{
+    .container_cards {
         display: grid;
         grid-template-columns: repeat(3,1fr);
     }
 }
-
-
 @media only screen and (min-width: 250px){
     /* Sliders carousel */
     #carousel_portfolio .carousel .carousel_container {
         width: 100%;
     }
-
     .arrow-left {
         left: 0;
         z-index: 1000;
     }
-
-    .arrow-right{
+    .arrow-right {
         right: 0;
         z-index: 1000;
     }
 }
-
-
 /* Pantalla tenue para envio de formularios */
-
 #pantalla-tenue.ok {
     width: 100%;
     height: 100vh;
